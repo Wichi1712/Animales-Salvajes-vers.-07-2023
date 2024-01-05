@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="text/html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animales Salvajes</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="text/html">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Animales Salvajes</title>
-</head>
-
-<!--frameset rows="80,*" frameborder="no" border="0" framespacing="0">
+  <!--frameset rows="80,*" frameborder="no" border="0" framespacing="0">
   <frame src="title.html" name="topFrame" scrolling="No" noresize="noresize" id="topFrame" title="topFrame" />
   <frame src="LISTA 2.html" name="mainFrame" id="mainFrame" title="mainFrame" />
 </frameset>
@@ -22,40 +21,53 @@
   </body>
 </noframes-->
 
-<body>
-  <!--
+  <body>
+    <!--
   <iframe src="title.html" frameborder="0"></iframe>
   <iframe src="LISTA 1.html" frameborder="0"></iframe>
 -->
-
-  <div id="title">
-    <iframe src="title.html" frameborder="0" width="100%" height="40px"></iframe>
-
-    <div id="botonesSuperiores">
-      <button id="Leon">Leon</button>
-      <button id="Cocodrilo">Cocodrilo</button>
-      <button id="Tigre">Tigre</button>
-      <button id="Tiburon">Tiburon</button>
-      <input type="button" value="INPUT TYPE BUTTON">
+<!--El primer DIV muestra un pagina con el titulo-->
+    <div id="title">
+      <iframe
+        src="title.html"
+        frameborder="0"
+        width="100%"
+        height="40px"
+      ></iframe>
+<!--Este segundo DIV muestra los botones superiores-->
+      <div id="botonesSuperiores">
+        <button id="Leon">Leon</button>
+        <button id="Cocodrilo">Cocodrilo</button>
+        <button id="Tigre">Tigre</button>
+        <button id="Tiburon">Tiburon</button>
+        <input type="button" value="INPUT TYPE BUTTON" />
+      </div>
     </div>
-  </div>
+<!--
+  *Esta es la parte central de la pagina muestra todo el contenido.
+  *Se inicia con la pagina imageMEnu.html en donde se encuentra
+    la presentacion de nuestra pagina.
+  *Los botones inferiores se encuentran en las paginas que se vayan 
+    cargando al momento de pulsar los botones superiores.
+-->
+    <div id="content" style="position: inherit">
+      <iframe
+        id="frame2"
+        src="imageMenu.html"
+        name="center"
+        frameborder="0"
+        width="100%"
+        height="700px"
+      ></iframe>
+    </div>
 
-  <div id="content" style="position: inherit;">
-    <iframe id="frame2" src="imageMenu.html" name="center" frameborder="0" width="100%" height="700px"></iframe>
-
-  </div>
-
-  <!--div id="footer" style="background-color: brown;">
+    <!--div id="footer" style="background-color: brown;">
     <div id="video"><a href="Crocodile/VIDEO_COCODRILO.html" target="center">Video</a></div>
     <div id="fotos"><a href="Crocodile/FOTOS_COCODRILO.html" target="center">Fotos</a></div>
     <div id="datos"><a href="Crocodile/DATOS_COCODRILO.html" target="center">Datos</a></div>
     
   </div-->
 
-  <script src="js/index.js"></script>
-
-
-</body>
-
-
+    <script src="js/index.js"></script>
+  </body>
 </html>

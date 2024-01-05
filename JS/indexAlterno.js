@@ -5,11 +5,14 @@ var typeAnimal = "";
 addEventListener("load", inicio);
 
 function inicio() {
+    //Estos son los botones superiores
     document.getElementById("Leon").addEventListener("click", mostrarMenuLeon);
     document.getElementById("Cocodrilo").addEventListener("click", mostrarMenuCocodrilo);
     document.getElementById("Tigre").addEventListener("click", mostrarMenuTigre);
     document.getElementById("Tiburon").addEventListener("click", mostrarMenuTiburon);
 
+    //Botones inferiores
+    //Boton foto ejecuta una accion dependiendo en que tipo de animal se encuentre
     document.getElementById("fotos").addEventListener("click", function(){
         switch (typeAnimal) {
             case "leon":
@@ -50,7 +53,10 @@ function inicio() {
     */
 }
 
-
+/*
+Estas son las primeras imagenes que se muestran al pulsar los 
+botones superiores Leon Tigre Tiburon Cocodrilo.
+*/
 function mostrarMenuLeon() {
     console.log("Leon");
     typeAnimal = "leon";

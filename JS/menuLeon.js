@@ -13,6 +13,7 @@ function mostrarFotoLeon() {
 }
 
 function crearImagen() {
+    //----Crea un cuadro con 4 imagenes de leon----
 
     //primero borro el iframe
     var eliminarIframe = document.getElementById("frameLeon");

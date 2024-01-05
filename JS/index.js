@@ -2,6 +2,7 @@ var typeAnimal = "";
 
 addEventListener("load", inicio);
 
+//Llanma a las funciones correspondientes a cada boton
 function inicio() {
     console.log("okkkkkkkkkkkk");
     document.getElementById("Leon").addEventListener("click", mostrarMenuLeon);
@@ -37,7 +38,8 @@ function inicio() {
 
 }
 
-
+//Cada funcion carga una pagina dependiendo del boton pulsado
+//Las paginas que se carguen mostraran los botones inferiores
 function mostrarMenuLeon() {
     console.log("Leon");
     typeAnimal = "leon";
