@@ -4,7 +4,7 @@ addEventListener("load", inicio);
 
 //Llanma a las funciones correspondientes a cada boton
 function inicio() {
-    console.log("okkkkkkkkkkkk");
+    console.log("indexJS Ok");
     document.getElementById("Leon").addEventListener("click", mostrarMenuLeon);
     document.getElementById("Cocodrilo").addEventListener("click", mostrarMenuCocodrilo);
     document.getElementById("Tigre").addEventListener("click", mostrarMenuTigre);
@@ -43,14 +43,14 @@ function inicio() {
 function mostrarMenuLeon() {
     console.log("Leon");
     typeAnimal = "leon";
-    //console.log(typeAnimal);
+    //console.log("typeAnimal: " + typeAnimal);
     document.getElementById("frame2").src="menuLeon.html";
 }
 
 function mostrarMenuCocodrilo() {
     console.log("Cocodrilo");
     typeAnimal = "cocodrilo";
-    console.log(typeAnimal);
+    //console.log("typeAnimal: " +typeAnimal);
     document.getElementById("frame2").src="menuCocodrilo.html";
 }
 
