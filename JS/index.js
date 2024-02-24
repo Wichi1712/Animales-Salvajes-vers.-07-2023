@@ -51,7 +51,7 @@ function mostrarMenuCocodrilo() {
     console.log("Cocodrilo");
     typeAnimal = "cocodrilo";
     //console.log("typeAnimal: " +typeAnimal);
-    document.getElementById("frame2").src="menuCocodrilo.html";
+    document.getElementById("frame2").src="Crocodile/menuCocodrilo.html";
 }
 
 function mostrarMenuTigre() {
