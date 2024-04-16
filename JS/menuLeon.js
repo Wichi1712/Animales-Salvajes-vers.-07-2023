@@ -10,13 +10,13 @@ function inicio() {
 }
 
 function mostrarFotoLeon() {
-  document.getElementById("href").src = "img/leon 2.jpg";
+  document.getElementById("href").src = "../img/leon 2.jpg";
 }
 
 function mostrarDatos() {
   if (statusDiv == "video" || statusDiv == "") {
     var datosLion = document.getElementById("frameLeon");
-    datosLion.src = "lion/leoninfo.html";
+    datosLion.src = "../lion/leoninfo.html";
   }else {
     fotoLeon1.remove();
     fotoLeon2.remove();
@@ -27,14 +27,14 @@ function mostrarDatos() {
     crearIframeLeon.setAttribute("id", "frameLeon");
     crearIframeLeon.setAttribute("name", "center");
     crearIframeLeon.setAttribute("frameborder", "0");
-    crearIframeLeon.setAttribute("width", "600px");
-    crearIframeLeon.setAttribute("height", "200px");
+    crearIframeLeon.setAttribute("width", "800px");
+    crearIframeLeon.setAttribute("height", "300px");
 
     var idDataLeon = document.getElementById("dataLion");
     idDataLeon.appendChild(crearIframeLeon);
 
     var datosLion = document.getElementById("frameLeon");
-    datosLion.src = "lion/leoninfo.html";
+    datosLion.src = "../lion/leoninfo.html";
   }
 
   statusDiv = "datos";
@@ -68,19 +68,19 @@ function crearImagen() {
     //Luego creo elementos img
     var fotoLeon1 = document.createElement("img");
     fotoLeon1.setAttribute("id", "fotoLeon1");
-    fotoLeon1.src = "img/leon 1.jpg";
+    fotoLeon1.src = "../img/leon 1.jpg";
 
     var fotoLeon2 = document.createElement("img");
     fotoLeon2.setAttribute("id", "fotoLeon2");
-    fotoLeon2.src = "img/leon 2.jpg";
+    fotoLeon2.src = "../img/leon 2.jpg";
 
     var fotoLeon3 = document.createElement("img");
     fotoLeon3.setAttribute("id", "fotoLeon3");
-    fotoLeon3.src = "img/leon 3.jpg";
+    fotoLeon3.src = "../img/leon 3.jpg";
 
     var fotoLeon4 = document.createElement("img");
     fotoLeon4.setAttribute("id", "fotoLeon4");
-    fotoLeon4.src = "img/leon 4.jpg";
+    fotoLeon4.src = "../img/leon 4.jpg";
 
     //Se agregan los elementos al id contenedor
     var idDataLeon = document.getElementById("dataLion"); //Se toma el ID
@@ -102,7 +102,7 @@ function crearVideo() {
     crearIframeLeon.setAttribute("name", "center");
     crearIframeLeon.setAttribute("frameborder", "0");
     crearIframeLeon.setAttribute("width", "600px");
-    crearIframeLeon.setAttribute("height", "200px");
+    crearIframeLeon.setAttribute("height", "300px");
 
     var idDataLeon = document.getElementById("dataLion");
     idDataLeon.appendChild(crearIframeLeon);
@@ -124,7 +124,7 @@ function crearVideo() {
   var videoLeon1 = document.getElementById("frameLeon");
   //console.log("Tipo  devideoLeon1 = " + typeof videoLeon1);
   //videoLeon1.setAttribute("id", "fotoLeon1");
-  videoLeon1.src = "lion/leonVideo.html";
+  videoLeon1.src = "../lion/leonVideo.html";
   statusDiv = "video";
   console.log("statusDiv = " + statusDiv);
 }

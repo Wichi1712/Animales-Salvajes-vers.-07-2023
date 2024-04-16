@@ -9,6 +9,7 @@ function inicio() {
     document.getElementById("Cocodrilo").addEventListener("click", mostrarMenuCocodrilo);
     document.getElementById("Tigre").addEventListener("click", mostrarMenuTigre);
     document.getElementById("Tiburon").addEventListener("click", mostrarMenuTiburon);
+    document.getElementById("About").addEventListener("click", mostrarAbout);
 
     /*
     document.getElementById("fotos").addEventListener("click", function(){
@@ -38,13 +39,17 @@ function inicio() {
 
 }
 
+function mostrarAbout() {
+    document.getElementById("frame2").src="about.html";
+}
+
 //Cada funcion carga una pagina dependiendo del boton pulsado
 //Las paginas que se carguen mostraran los botones inferiores
 function mostrarMenuLeon() {
     console.log("Leon");
     typeAnimal = "leon";
     //console.log("typeAnimal: " + typeAnimal);
-    document.getElementById("frame2").src="menuLeon.html";
+    document.getElementById("frame2").src="./Lion/menuLeon.html";
 }
 
 function mostrarMenuCocodrilo() {
@@ -57,13 +62,13 @@ function mostrarMenuCocodrilo() {
 function mostrarMenuTigre() {
     console.log("Tigre");
     typeAnimal = "tigre";
-    document.getElementById("frame2").src="menuCocodrilo.html";
+    document.getElementById("frame2").src="./Tigre/menuTigre.html";
 }
 
 function mostrarMenuTiburon() {
     console.log("Tiburon");
     typeAnimal = "tiburon";
-    document.getElementById("frame2").src="menuCocodrilo.html";
+    document.getElementById("frame2").src="./Tiburon/menuTiburon.html";
 }
 
 //Funciones de botones inferiores------------------------------------------

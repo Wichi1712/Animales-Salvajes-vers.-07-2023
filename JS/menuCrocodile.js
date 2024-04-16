@@ -9,32 +9,32 @@ function inicio() {
   document.getElementById("datos").addEventListener("click", mostrarDatos);
 }
 
-function mostrarFotoLeon() {
-  document.getElementById("href").src = "img/leon 2.jpg";
+function mostrarFotoCocodrilo() {
+  document.getElementById("href").src = "../img/cocodrilo 1.jpg";
 }
 
 function mostrarDatos() {
   if (statusDiv == "video" || statusDiv == "") {
-    var datosLion = document.getElementById("frameLeon");
-    datosLion.src = "lion/leoninfo.html";
+    var datosCocodrilo = document.getElementById("frameCocodrilo");
+    datosCocodrilo.src = "../Crocodile/crocodileinfo.html";
   }else {
-    fotoLeon1.remove();
-    fotoLeon2.remove();
-    fotoLeon3.remove();
-    fotoLeon4.remove();
+    fotoCocodrilo1.remove();
+    fotoCocodrilo2.remove();
+    fotoCocodrilo3.remove();
+    fotoCocodrilo4.remove();
 
-    var crearIframeLeon = document.createElement("iframe");
-    crearIframeLeon.setAttribute("id", "frameLeon");
-    crearIframeLeon.setAttribute("name", "center");
-    crearIframeLeon.setAttribute("frameborder", "0");
-    crearIframeLeon.setAttribute("width", "600px");
-    crearIframeLeon.setAttribute("height", "200px");
+    var crearIframeCocodrilo = document.createElement("iframe");
+    crearIframeCocodrilo.setAttribute("id", "frameCocodrilo");
+    crearIframeCocodrilo.setAttribute("name", "center");
+    crearIframeCocodrilo.setAttribute("frameborder", "0");
+    crearIframeCocodrilo.setAttribute("width", "800px");
+    crearIframeCocodrilo.setAttribute("height", "300px");
 
-    var idDataLeon = document.getElementById("dataLion");
-    idDataLeon.appendChild(crearIframeLeon);
+    var idDataCocodrilo = document.getElementById("dataCocodrilo");
+    idDataCocodrilo.appendChild(crearIframeCocodrilo);
 
-    var datosLion = document.getElementById("frameLeon");
-    datosLion.src = "lion/leoninfo.html";
+    var datosCocodrilo = document.getElementById("frameCocodrilo");
+    datosCocodrilo.src = "../Crocodile/crocodileinfo.html";
   }
 
   statusDiv = "datos";
@@ -58,7 +58,7 @@ function crearImagen() {
     //fotoLeon4.remove();
 
     //primero elimino el iframe para poder insertar las etiquetas img
-    var eliminarIframe = document.getElementById("frameLeon");
+    var eliminarIframe = document.getElementById("frameCocodrilo");
     eliminarIframe.remove();
 
     //primero elimino el iframe para poder insertar las etiquetas img
@@ -66,28 +66,28 @@ function crearImagen() {
     //eliminarIframe.remove();
 
     //Luego creo elementos img
-    var fotoLeon1 = document.createElement("img");
-    fotoLeon1.setAttribute("id", "fotoLeon1");
-    fotoLeon1.src = "img/leon 1.jpg";
+    var fotoCocodrilo1 = document.createElement("img");
+    fotoCocodrilo1.setAttribute("id", "fotoCocodrilo1");
+    fotoCocodrilo1.src = "../img/cocodrilo 1.jpg";
 
-    var fotoLeon2 = document.createElement("img");
-    fotoLeon2.setAttribute("id", "fotoLeon2");
-    fotoLeon2.src = "img/leon 2.jpg";
+    var fotoCocodrilo2 = document.createElement("img");
+    fotoCocodrilo2.setAttribute("id", "fotoCocodrilo2");
+    fotoCocodrilo2.src = "../img/cocodrilo 2.jpg";
 
-    var fotoLeon3 = document.createElement("img");
-    fotoLeon3.setAttribute("id", "fotoLeon3");
-    fotoLeon3.src = "img/leon 3.jpg";
+    var fotoCocodrilo3 = document.createElement("img");
+    fotoCocodrilo3.setAttribute("id", "fotoCocodrilo3");
+    fotoCocodrilo3.src = "../img/cocodrilo 3.jpg";
 
-    var fotoLeon4 = document.createElement("img");
-    fotoLeon4.setAttribute("id", "fotoLeon4");
-    fotoLeon4.src = "img/leon 4.jpg";
+    var fotoCocodrilo4 = document.createElement("img");
+    fotoCocodrilo4.setAttribute("id", "fotoCocodrilo4");
+    fotoCocodrilo4.src = "../img/cocodrilo 4.jpg";
 
     //Se agregan los elementos al id contenedor
-    var idDataLeon = document.getElementById("dataLion"); //Se toma el ID
-    idDataLeon.appendChild(fotoLeon1);
-    idDataLeon.appendChild(fotoLeon2);
-    idDataLeon.appendChild(fotoLeon3);
-    idDataLeon.appendChild(fotoLeon4);
+    var idDataCocodrilo = document.getElementById("dataCocodrilo"); //Se toma el ID
+    idDataCocodrilo.appendChild(fotoCocodrilo1);
+    idDataCocodrilo.appendChild(fotoCocodrilo2);
+    idDataCocodrilo.appendChild(fotoCocodrilo3);
+    idDataCocodrilo.appendChild(fotoCocodrilo4);
 
     statusDiv = "imagen";
   }
@@ -97,20 +97,20 @@ function crearImagen() {
 
 function crearVideo() {
   if (statusDiv == "imagen") {
-    var crearIframeLeon = document.createElement("iframe");
-    crearIframeLeon.setAttribute("id", "frameLeon");
-    crearIframeLeon.setAttribute("name", "center");
-    crearIframeLeon.setAttribute("frameborder", "0");
-    crearIframeLeon.setAttribute("width", "600px");
-    crearIframeLeon.setAttribute("height", "200px");
+    var crearIframeCocodrilo = document.createElement("iframe");
+    crearIframeCocodrilo.setAttribute("id", "frameCocodrilo");
+    crearIframeCocodrilo.setAttribute("name", "center");
+    crearIframeCocodrilo.setAttribute("frameborder", "0");
+    crearIframeCocodrilo.setAttribute("width", "600px");
+    crearIframeCocodrilo.setAttribute("height", "300px");
 
-    var idDataLeon = document.getElementById("dataLion");
-    idDataLeon.appendChild(crearIframeLeon);
+    var idDataCocodrilo = document.getElementById("dataCocodrilo");
+    idDataCocodrilo.appendChild(crearIframeCocodrilo);
 
-    fotoLeon1.remove();
-    fotoLeon2.remove();
-    fotoLeon3.remove();
-    fotoLeon4.remove();
+    fotoCocodrilo1.remove();
+    fotoCocodrilo2.remove();
+    fotoCocodrilo3.remove();
+    fotoCocodrilo4.remove();
 
     //statusDiv = "video";
   }
@@ -121,10 +121,10 @@ function crearVideo() {
   //document.getElementById("fotoLeon").replaceChildren("videoLeon1");
 
   //SI NO ESTA EL FRAME NESECITO CREARLO--OJO--
-  var videoLeon1 = document.getElementById("frameLeon");
+  var videoCocodrilo1 = document.getElementById("frameCocodrilo");
   //console.log("Tipo  devideoLeon1 = " + typeof videoLeon1);
   //videoLeon1.setAttribute("id", "fotoLeon1");
-  videoLeon1.src = "lion/leonVideo.html";
+  videoCocodrilo1.src = "../Crocodile/CrocodileVideo.html";
   statusDiv = "video";
   console.log("statusDiv = " + statusDiv);
 }
