@@ -69,18 +69,26 @@ function crearImagen() {
     //Luego creo elementos img
     var fotoTiburon1 = document.createElement("img");
     fotoTiburon1.setAttribute("id", "fotoTiburon1");
+    fotoTiburon1.setAttribute("width", "300px");
+    fotoTiburon1.setAttribute("height", "200px");
     fotoTiburon1.src = "../img/tiburon 1.jpg";
 
     var fotoTiburon2 = document.createElement("img");
     fotoTiburon2.setAttribute("id", "fotoTiburon2");
+    fotoTiburon2.setAttribute("width", "300px");
+    fotoTiburon2.setAttribute("height", "200px");
     fotoTiburon2.src = "../img/tiburon 2.jpg";
 
     var fotoTiburon3 = document.createElement("img");
     fotoTiburon3.setAttribute("id", "fotoTiburon3");
+    fotoTiburon3.setAttribute("width", "300px");
+    fotoTiburon3.setAttribute("height", "200px");
     fotoTiburon3.src = "../img/tiburon 3.jpg";
 
     var fotoTiburon4 = document.createElement("img");
     fotoTiburon4.setAttribute("id", "fotoTiburon4");
+    fotoTiburon4.setAttribute("width", "300px");
+    fotoTiburon4.setAttribute("height", "200px");
     fotoTiburon4.src = "../img/tiburon 4.jpg";
 
     //Se agregan los elementos al id contenedor

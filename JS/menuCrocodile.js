@@ -68,18 +68,26 @@ function crearImagen() {
     //Luego creo elementos img
     var fotoCocodrilo1 = document.createElement("img");
     fotoCocodrilo1.setAttribute("id", "fotoCocodrilo1");
+    fotoCocodrilo1.setAttribute("width", "300px");
+    fotoCocodrilo1.setAttribute("height", "200px");
     fotoCocodrilo1.src = "../img/cocodrilo 1.jpg";
 
     var fotoCocodrilo2 = document.createElement("img");
     fotoCocodrilo2.setAttribute("id", "fotoCocodrilo2");
+    fotoCocodrilo2.setAttribute("width", "300px");
+    fotoCocodrilo2.setAttribute("height", "200px");
     fotoCocodrilo2.src = "../img/cocodrilo 2.jpg";
 
     var fotoCocodrilo3 = document.createElement("img");
     fotoCocodrilo3.setAttribute("id", "fotoCocodrilo3");
+    fotoCocodrilo3.setAttribute("width", "300px");
+    fotoCocodrilo3.setAttribute("height", "200px");
     fotoCocodrilo3.src = "../img/cocodrilo 3.jpg";
 
     var fotoCocodrilo4 = document.createElement("img");
     fotoCocodrilo4.setAttribute("id", "fotoCocodrilo4");
+    fotoCocodrilo4.setAttribute("width", "300px");
+    fotoCocodrilo4.setAttribute("height", "200px");
     fotoCocodrilo4.src = "../img/cocodrilo 4.jpg";
 
     //Se agregan los elementos al id contenedor

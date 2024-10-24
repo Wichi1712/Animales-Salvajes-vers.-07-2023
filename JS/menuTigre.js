@@ -68,18 +68,26 @@ function crearImagen() {
     //Luego creo elementos img
     var fotoTigre1 = document.createElement("img");
     fotoTigre1.setAttribute("id", "fotoTigre1");
+    fotoTigre1.setAttribute("width", "300px");
+    fotoTigre1.setAttribute("height", "200px");
     fotoTigre1.src = "../img/tigre 1.jpg";
 
     var fotoTigre2 = document.createElement("img");
     fotoTigre2.setAttribute("id", "fotoTigre2");
+    fotoTigre2.setAttribute("width", "300px");
+    fotoTigre2.setAttribute("height", "200px");
     fotoTigre2.src = "../img/tigre 2.jpg";
 
     var fotoTigre3 = document.createElement("img");
     fotoTigre3.setAttribute("id", "fotoTigre3");
+    fotoTigre3.setAttribute("width", "300px");
+    fotoTigre3.setAttribute("height", "200px");
     fotoTigre3.src = "../img/tigre 3.jpg";
 
     var fotoTigre4 = document.createElement("img");
     fotoTigre4.setAttribute("id", "fotoTigre4");
+    fotoTigre4.setAttribute("width", "300px");
+    fotoTigre4.setAttribute("height", "200px");
     fotoTigre4.src = "../img/tigre 4.jpg";
 
     //Se agregan los elementos al id contenedor
